@@ -1,6 +1,8 @@
 let booksListArr = [];
 
 const newBook = document.querySelector('.booksList');
+const retData = JSON.parse(localStorage.bookListStorage);
+booksListArr = retData;
 
 function displayBooks() {
   newBook.innerHTML = booksListArr
@@ -16,11 +18,18 @@ function displayBooks() {
     )
     .join('');
 }
+
+window.addEventListener('load', () => {
+  displayBooks();
+});
+
 // eslint-disable-next-line no-unused-vars
 function addBook() {
   const bookTitle = document.querySelector('.title').value;
   const bookAuthor = document.querySelector('.author').value;
   booksListArr.push({ title: bookTitle, author: bookAuthor });
+  const str = JSON.stringify(booksListArr);
+  localStorage.setItem('bookListStorage', str);
   displayBooks();
 }
 
@@ -29,5 +38,7 @@ function removeBook(title, author) {
   booksListArr = booksListArr.filter(
     (x) => x.title !== title || x.author !== author,
   );
+  const str = JSON.stringify(booksListArr);
+  localStorage.setItem('bookListStorage', str);
   displayBooks();
 }
