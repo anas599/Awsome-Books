@@ -8,7 +8,7 @@
   <img src="./Assets/images/logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Nova Cosmetics Project</b></h3>
+  <h3><b>Awsome Books</b></h3>
 
 </div>
 
@@ -17,12 +17,12 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-- 🎥<a href="https://www.loom.com/share/588fcf7cacc3431f86bbbf7535a9f4d9">
+- 🎥<a href="https://www.loom.com/">
 Video presenting the features the Project</a>
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - 🚀<a href="https://anas599.github.io/Capstone-project/">Live Demo</a>
+  - 🚀<a href="">Live Demo</a>
   - [💻 Getting Started](#getting-started)
   - [Setup1](#setup)
   - [Prerequisites](#prerequisites)
@@ -40,14 +40,14 @@ Video presenting the features the Project</a>
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Nova Cosmetics Project] <a name="Video-Presenting"></a>
-<a href="https://www.loom.com/share/588fcf7cacc3431f86bbbf7535a9f4d9">
+# 📖 [Awsome Books] <a name="Video-Presenting"></a>
+<a href="https://www.loom.com">
 Video presenting the features the Project
 </a>
-# 📖 [Nova Cosmetics Project] <a name="about-project"></a>
+# 📖 [Awsome Books] <a name="about-project"></a>
 
 
-**[Nova Cosmetics Project]** is a mobile and Desktop responsive website to demonstrate my knowledge in HTML/CSS and Javascript, it's a re-designing website for already existing brand 
+**[Awsome Books]** is a mobile and Desktop responsive website to demonstrate my knowledge in HTML/CSS and Javascript, it's a re-designing website for already existing brand 
 
 ## 🛠 Built With <a name="HTML/CSS and Javascript"></a>
 
@@ -94,7 +94,7 @@ Video presenting the features the Project
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://anas599.github.io/Capstone-project/)
+- [Live Demo Link](https://anas599/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
