@@ -18,11 +18,9 @@ function displayBooks() {
     )
     .join('');
 }
-
 window.addEventListener('load', () => {
   displayBooks();
 });
-
 // eslint-disable-next-line no-unused-vars
 function addBook() {
   const bookTitle = document.querySelector('.title').value;
@@ -34,10 +32,15 @@ function addBook() {
 }
 
 // eslint-disable-next-line no-unused-vars
-function removeBook(title, author) {
-  booksListArr = booksListArr.filter(
-    (x) => x.title !== title || x.author !== author,
-  );
+function removeBook(title) {
+  let removed = null;
+  booksListArr = booksListArr.filter((x) => {
+    if (x.title === title && !removed) {
+      removed = !null;
+      return null;
+    }
+    return !null;
+  });
   const str = JSON.stringify(booksListArr);
   localStorage.setItem('bookListStorage', str);
   displayBooks();
