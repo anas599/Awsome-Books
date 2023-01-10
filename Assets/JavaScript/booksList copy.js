@@ -3,15 +3,14 @@ class AwsomeBooks {
 
   constructor(booksListArr) {
     this.booksListArr = ['test-array'];
-    this.booksListArr.push({ title: 2, author: 3 });    
-    console.log('array',this.booksListArr);
+    this.booksListArr.push({ title: 2, author: 3 });
+    console.log('array', this.booksListArr);
     this.newBook = document.querySelector('.booksList');
     this.addButton = document.querySelector('#add-button');
-    this.addButton.addEventListener('click',this.addBook);
-
+    this.addButton.addEventListener('click', () => this.addBook());
   }
 
-  display() {    
+  display() {
     this.newBook.innerHTML = this.booksListArr
       .map(
         (x) => `
@@ -35,26 +34,23 @@ class AwsomeBooks {
     localStorage.setItem('bookListStorage', str);
     this.display();
   }
-
 }
-let myBook = new AwsomeBooks();
+const myBook = new AwsomeBooks();
 
-// let booksListArr = [];
 window.addEventListener('load', () => {
   myBook.display();
 });
 
-
-function removeBook(title) {
-  let removed = null;
-  booksListArr = booksListArr.filter((x) => {
-    if (x.title === title && !removed) {
-      removed = !null;
-      return null;
-    }
-    return !null;
-  });
-  const str = JSON.stringify(booksListArr);
-  localStorage.setItem('bookListStorage', str);
-  displayBooks();
-}
+// function removeBook(title) {
+//   let removed = null;
+//   booksListArr = booksListArr.filter((x) => {
+//     if (x.title === title && !removed) {
+//       removed = !null;
+//       return null;
+//     }
+//     return !null;
+//   });
+//   const str = JSON.stringify(booksListArr);
+//   localStorage.setItem('bookListStorage', str);
+//   displayBooks();
+// }
