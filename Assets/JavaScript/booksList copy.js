@@ -2,11 +2,16 @@ class AwsomeBooks {
   booksListArr;
 
   constructor(booksListArr) {
-    this.booksListArr = JSON.parse(localStorage.bookListStorage) || [];
+    this.booksListArr = ['test-array'];
+    this.booksListArr.push({ title: 2, author: 3 });    
+    console.log('array',this.booksListArr);
     this.newBook = document.querySelector('.booksList');
+    this.addButton = document.querySelector('#add-button');
+    this.addButton.addEventListener('click',this.addBook);
+
   }
 
-  display() {
+  display() {    
     this.newBook.innerHTML = this.booksListArr
       .map(
         (x) => `
@@ -20,42 +25,26 @@ class AwsomeBooks {
       )
       .join('');
   }
+
+  addBook() {
+    console.log('Here ok');
+    const bookTitle = document.querySelector('.title').value;
+    const bookAuthor = document.querySelector('.author').value;
+    this.booksListArr.push({ title: bookTitle, author: bookAuthor });
+    const str = JSON.stringify(this.booksListArr);
+    localStorage.setItem('bookListStorage', str);
+    this.display();
+  }
+
 }
-let myBook = new AwsomeBooks()
+let myBook = new AwsomeBooks();
+
 // let booksListArr = [];
 window.addEventListener('load', () => {
-  displayBooks();
+  myBook.display();
 });
 
-// const newBook = document.querySelector('.booksList');
-// const retData = JSON.parse(localStorage.bookListStorage);
-// booksListArr = retData;
 
-// function displayBooks() {
-//   newBook.innerHTML = booksListArr
-//     .map(
-//       (x) => `
-//     <section class="booksList">
-//     <p>${x.title}</p>
-//     <p>${x.author}</p>
-//     <button onclick="removeBook('${x.title}', '${x.author}')">remove</button>
-//     <hr></hr>
-//     <section>
-//     `,
-//     )
-//     .join('');
-// }
-// eslint-disable-next-line no-unused-vars
-function addBook() {
-  const bookTitle = document.querySelector('.title').value;
-  const bookAuthor = document.querySelector('.author').value;
-  booksListArr.push({ title: bookTitle, author: bookAuthor });
-  const str = JSON.stringify(booksListArr);
-  localStorage.setItem('bookListStorage', str);
-  displayBooks();
-}
-
-// eslint-disable-next-line no-unused-vars
 function removeBook(title) {
   let removed = null;
   booksListArr = booksListArr.filter((x) => {
