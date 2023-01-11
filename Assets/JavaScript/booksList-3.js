@@ -56,14 +56,20 @@ class AwsomeBooks {
       const removeButton = document.querySelector(`
        #button-item-${this.id}`); 
       removeButton.addEventListener('click', () => this.removeBook(removeButton.id));
-                  
+                 
+      const str = JSON.stringify(this.booksListArr);
+      localStorage.setItem('bookListStorage', str);
     }
 
     removeBook(itemId) {
 
         let id = itemId.split('-')[2];       
         const result = this.booksListArr.filter(item => item.id != id  );
+        console.log(result);
         this.booksListArr = result;
+        const str = JSON.stringify(this.booksListArr);
+        localStorage.setItem('bookListStorage', str);
+
         const itemToRemove = document.querySelector(`
           .item-${id}`);
         console.log(itemToRemove);
@@ -72,5 +78,6 @@ class AwsomeBooks {
     }
 }
 
-const myBook = new AwsomeBooks([{ id:0 ,author: 'author-0', title: 'title-0' },
-{ id:1 ,author: 'author-1', title: 'title-1' }]);
+const retData = JSON.parse(localStorage.bookListStorage);
+
+const myBook = new AwsomeBooks(retData);
