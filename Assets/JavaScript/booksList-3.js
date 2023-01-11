@@ -61,10 +61,9 @@ class AwsomeBooks {
 
     removeBook(itemId) {
 
-        let id = itemId.split('-')[2];
-        console.log('id', id );
+        let id = itemId.split('-')[2];       
         const result = this.booksListArr.filter(item => item.id != id  );
-        console.log('remove', `item-${id}`);
+        this.booksListArr = result;
         const itemToRemove = document.querySelector(`
           .item-${id}`);
         console.log(itemToRemove);
