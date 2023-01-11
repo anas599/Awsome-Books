@@ -5,7 +5,6 @@ const colorCon = document.querySelector('#colorCon');
 const colorAdd = document.querySelector('#colorAdd');
 const colorBooks = document.querySelector('#colorBooks');
 
-// eslint-disable-next-line no-unused-vars
 function showContact() {
   contact.style.display = 'flex';
   addBook.style.display = 'none';
@@ -14,23 +13,23 @@ function showContact() {
   colorAdd.style.color = 'black';
   colorBooks.style.color = 'black';
 }
-// eslint-disable-next-line no-unused-vars
+colorCon.addEventListener('click', showContact);
 function showAddBook() {
   contact.style.display = 'none';
   addBook.style.display = 'flex';
   bookList.style.display = 'none';
   colorAdd.style.color = 'blue';
   colorCon.style.color = 'black';
-
   colorBooks.style.color = 'black';
 }
-// eslint-disable-next-line no-unused-vars
+colorAdd.addEventListener('click', showAddBook);
+
 function showBooks() {
   contact.style.display = 'none';
   addBook.style.display = 'none';
   bookList.style.display = 'flex';
   colorBooks.style.color = 'blue';
   colorCon.style.color = 'black';
-
   colorAdd.style.color = 'black';
 }
+colorBooks.addEventListener('click', showBooks);
