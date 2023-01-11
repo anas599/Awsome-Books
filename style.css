@@ -39,8 +39,6 @@ input {
   justify-content: space-between;
   align-items: center;
   padding-left: 10px;
-
-  /* background-color: rgb(232, 232, 232); */
 }
 
 /* [class^="item"]:nth-of-type(2) {
