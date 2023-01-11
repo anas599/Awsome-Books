@@ -19,17 +19,6 @@ button {
   border: none;
 }
 
-button:active {
-  color: blue;
-}
-
-hr {
-  height: 1.5px;
-  width: 20vw;
-  margin: 5vh;
-  background-color: #000;
-}
-
 .booksList {
   display: none;
   border: 2px solid black;
@@ -81,7 +70,9 @@ input {
   flex-direction: row;
   width: 50vw;
   justify-content: space-between;
+  align-items: center;
   border: 2px solid black;
+  padding: 12px;
 }
 
 #navItems {
