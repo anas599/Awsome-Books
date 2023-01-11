@@ -88,14 +88,11 @@ class AwsomeBooks {
   }
 }
 
+let retData = [{}];
 
-let retData= [{}];
-
-if(localStorage.bookListStorage != undefined){
-    retData = JSON.parse(localStorage.bookListStorage);
+if (localStorage.bookListStorage !== undefined) {
+  retData = JSON.parse(localStorage.bookListStorage);
 }
-
-
 
 // eslint-disable-next-line no-unused-vars
 const myBook = new AwsomeBooks(retData);
