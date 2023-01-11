@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .input-section {
@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 button {
@@ -18,5 +18,52 @@ button {
 }
 
 hr {
-  width: 90vw;
+  height: 1.5px;
+  width: 20vw;
+  margin: 5vh;
+  background-color: #000;
+}
+
+.booksList {
+  border: 2px solid black;
+  width: 50vw;
+}
+
+input {
+  margin: 5px;
+}
+
+[class^="item"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+/* [class^="item"]:nth-of-type(2) {
+  background-color: white;
+}
+
+[class^="item"]:nth-of-type(4) {
+  background-color: white;
+} */
+
+.title,
+.author {
+  border: 2px solid black;
+}
+
+.remove-button {
+  height: 25px;
+  margin-right: 10px;
+  background-color: white;
+  filter: drop-shadow(5px 3px 1px #000);
+}
+
+#add-button {
+  height: 25px;
+  margin-right: 10px;
+  background-color: white;
+  filter: drop-shadow(5px 3px 1px #000);
 }
