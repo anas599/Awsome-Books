@@ -8,16 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Awsome Books</h1>
+    <nav class="navBar">
+        <p><strong>Awsome Books</strong></p>
+        <ul id="navItems">
+            <li class="listItem"><button id="colorBooks">List</button></li>
+            <li class="listItem"><button id="colorAdd">Add new</button></li>
+            <li class="listItem"><button id="colorCon">Contact</button></li>                                    
+        </ul>
+    </nav>
     <section class="booksList">
     </section>
-    <hr>
-    <h2>Add a new Book</h2>
     <form class="input-section">
+        <h2>Add a new Book</h2>
         <input type="text" placeholder="Title" class="title" size="25">
         <input type="text" placeholder="Author" class="author" size="25">
         <input type = "button" id = "add-button" value="Add">
     </form>
+    <section id="contact" onclick="showContact()">
+        <h1>Contact Information</h1>
+        <p>Do you have any questions or you just want to say hello? <br>You can reach out to us!</p>
+        <ul>
+            <li>Our email : email@mail.com</li>
+            <li>Our Phone Number : 00123456789</li>
+            <li>Our Address : Streetname 22, 86789 City, Country</li>
+        </ul>
+    </section>
+    <footer>
+        <p id="copyright">Copyright _</p>
+    </footer>
     <script src="./Assets/JavaScript/booksList-3.js"></script>
+    <script src="./Assets/JavaScript/navItems.js"></script>
 </body>
 </html>

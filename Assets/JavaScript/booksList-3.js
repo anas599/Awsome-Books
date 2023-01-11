@@ -32,8 +32,7 @@ class AwsomeBooks {
       .map(
         (x) => `
             <div class="item-${x.id}">
-            <p>Title: ${x.title}</p>
-            <p>Author:${x.author}</p>
+            <p>${x.title} by: ${x.author}</p>
             <input type = "button" class = "remove-button" id='button-item-${x.id}' value="remove">        
             </div>
             `,
@@ -57,8 +56,7 @@ class AwsomeBooks {
     newItem.className = `item-${this.id}`;
     newItem.innerHTML = `
 
-      <p>Title: ${bookTitle}</p>
-      <p>Author: ${bookAuthor}</p>      
+      <p>Title: ${bookTitle} by:${bookAuthor}</p>      
       <input type = "button" class = "remove-button" id='button-item-${this.id}' value="remove">  
      
       
