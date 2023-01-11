@@ -1,7 +1,3 @@
-class{
-    
-}
-
 let booksListArr = [];
 
 const newBook = document.querySelector('.booksList');
