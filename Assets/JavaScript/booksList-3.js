@@ -88,7 +88,7 @@ class AwsomeBooks {
   }
 }
 
-let retData = [{}];
+let retData = [];
 
 if (localStorage.bookListStorage !== undefined) {
   retData = JSON.parse(localStorage.bookListStorage);
