@@ -1,6 +1,7 @@
 const contact = document.querySelector('#contact');
 const addBook = document.querySelector('.input-section');
 const bookList = document.querySelector('.booksList');
+const colorCon = document.querySelector("#colorCon");
 
 // eslint-disable-next-line no-unused-vars
 function showContact() {

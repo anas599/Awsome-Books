@@ -21,7 +21,9 @@ button {
 button:active{
   color: blue;
 }
-
+button:focus{
+  color: red;
+}
 hr {
   height: 1.5px;
   width: 20vw;
