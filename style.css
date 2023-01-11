@@ -39,12 +39,17 @@ input {
   justify-content: space-between;
   align-items: center;
   padding-left: 10px;
-  background-color: rgb(232, 232, 232);
+
+  /* background-color: rgb(232, 232, 232); */
 }
 
-[class^="item"]:nth-of-type(2) {
+/* [class^="item"]:nth-of-type(2) {
   background-color: white;
 }
+
+[class^="item"]:nth-of-type(4) {
+  background-color: white;
+} */
 
 .title,
 .author {
