@@ -1,4 +1,7 @@
-class AwsomeBooks {
+// export  const bookTitle = document.querySelector('.title').value;
+// export  const bookAuthor = document.querySelector('.author').value;
+// export  const shit = 'shit'
+export class AwsomeBooks {
   booksListArr;
 
   constructor(booksListArr) {
@@ -10,7 +13,6 @@ class AwsomeBooks {
     this.addButton.addEventListener('click', () => this.addBook());
 
     this.removeButtons = document.querySelectorAll('.remove-button');
-
     for (let j = 0; j < this.removeButtons.length; j += 1) {
       this.removeButtons[j].addEventListener('click', () => this.removeBook(this.removeButtons[j].id));
     }
@@ -18,7 +20,10 @@ class AwsomeBooks {
 
   changeColor() {
     for (let i = 0; i < this.booksListArr.length; i += 1) {
-      const bgColor = document.querySelector(`.item-${this.booksListArr[i].id}`);
+      const bgColor = document.querySelector(
+        `.item-${this.booksListArr[i].id}`,
+      );
+
       if (i % 2 === 0) {
         bgColor.style.backgroundColor = 'gray';
       } else {
@@ -57,9 +62,7 @@ class AwsomeBooks {
     newItem.innerHTML = `
 
       <p>Title: ${bookTitle} by:${bookAuthor}</p>      
-      <input type = "button" class = "remove-button" id='button-item-${this.id}' value="remove">  
-     
-      
+      <input type = "button" class = "remove-button" id='button-item-${this.id}' value="remove">
       `;
     this.newBook.appendChild(newItem);
 
@@ -85,12 +88,3 @@ class AwsomeBooks {
     this.changeColor();
   }
 }
-
-let retData = [];
-
-if (localStorage.bookListStorage !== undefined) {
-  retData = JSON.parse(localStorage.bookListStorage);
-}
-
-// eslint-disable-next-line no-unused-vars
-const myBook = new AwsomeBooks(retData);
