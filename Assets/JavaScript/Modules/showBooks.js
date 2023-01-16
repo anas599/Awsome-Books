@@ -1,4 +1,5 @@
-import { addBook, bookList } from '../navItems.js';
+const addBook = document.querySelector('.input-section');
+const bookList = document.querySelector('.booksList');
 
 export const showBooks = () => {
   contact.style.display = 'none';
