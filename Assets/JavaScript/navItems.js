@@ -1,6 +1,6 @@
 import showAddBook from './Modules/showAddBook.js';
 import showContact from './Modules/showContact.js';
-import { showBooks } from './Modules/showBooks.js';
+import showBooks from './Modules/showBooks.js';
 
 const colorCon = document.querySelector('#colorCon');
 const colorAdd = document.querySelector('#colorAdd');

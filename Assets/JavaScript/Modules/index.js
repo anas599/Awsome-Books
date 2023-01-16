@@ -1,4 +1,4 @@
-import { AwsomeBooks } from './AwsomeBooks.js';
+import AwsomeBooks from './AwsomeBooks.js';
 import { DateTime } from '../luxon.js';
 
 const lux = document.getElementById('myTime');
@@ -11,4 +11,5 @@ let retData = [];
 if (localStorage.bookListStorage !== undefined) {
   retData = JSON.parse(localStorage.bookListStorage);
 }
+// eslint-disable-next-line no-unused-vars
 const myBook = new AwsomeBooks(retData);

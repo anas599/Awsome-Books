@@ -1,7 +1,7 @@
 // export  const bookTitle = document.querySelector('.title').value;
 // export  const bookAuthor = document.querySelector('.author').value;
 // export  const shit = 'shit'
-export class AwsomeBooks {
+export default class AwsomeBooks {
   booksListArr;
 
   constructor(booksListArr) {
