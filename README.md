@@ -1,4 +1,4 @@
-# Portfolio: desktop version
+# Awsome Books 
 
 <a name="readme-top"></a>
 
@@ -45,7 +45,7 @@ Video presenting the features the Project
 # 📖 [Awsome Books] <a name="about-project"></a>
 
 
-**[Awsome Books]** is a mobile and Desktop responsive website to demonstrate my knowledge in HTML/CSS and Javascript, it's a re-designing website for already existing brand 
+**[Awsome Books]** is a tool to save favourite books it was build with Vanilla JavaScript and HTML/CSS
 
 ## 🛠 Built With <a name="HTML/CSS and Javascript"></a>
 
@@ -67,9 +67,9 @@ Video presenting the features the Project
 
 > Describe between 1-3 key features of the application.
 
-- **[When clicking on the project, a pop-up window will appear]**
-- **[When clicking on three bars in mobile version a nav menu will]**
-- **[scrolling down or up will hide or show sections using transitions]**
+- **[When clicking on add book it will add it to list]**
+- **[When clicking on list it will show the books list]**
+- **[All the books in list will be saved to local storage]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +79,7 @@ Video presenting the features the Project
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://anas599/)
+- [Live Demo Link](https://anas599.github.io/Awsome-Books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,31 +95,15 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+Visit the live demo 
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-
-
-### Install
-
-Install this project with:
-
-Node js
-
-### Usage
-
 To run the project, execute the following command:
 
-Clone the Repository to your local machine and open it using Live Server Extension in VS code
+Clone the Repository to your local machine and open it using Live Server Extension in VS code or any IDE
 
 ### Run tests
 
@@ -185,7 +169,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Thanks to <a href="https://www.behance.net/adagio07">Cindy Shin</a> for provideing such an Amazing design
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
