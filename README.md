@@ -5,11 +5,9 @@
 
 <div align="center">
 
-  <img src="./Assets/images/logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./Assets/JavaScript/logoIcon.gif" alt="logo" width="140"  height="auto" />
   <br/>
-
   <h3><b>Awsome Books</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
